@@ -1,0 +1,323 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eaf3fa;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    margin: 0 20px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    border-radius: 5px;
+  }
+  
+  .profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ddd;
+  }
+  
+  /* Welcome Section */
+  .welcome-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+    background: url('assets/img/traffic-light.png') no-repeat center center/cover ;
+    color: #fff;
+  }
+  
+  .welcome-section .overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Transparansi untuk teks agar kontras */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+  }
+  
+  .welcome-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .welcome-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Footer */
+  footer {
+    background: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  footer .footer-content p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+  }
+  /* Navbar */
+  header nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    background-color: #1d3557;
+    color: white;
+  }
+  
+  header nav ul li a.active {
+    background-color: #1d3557;
+    color: white;
+  }
+  /* Layout */
+  .control-panel {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 20%;
+    border-right: 2px solid #ddd;
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+  }
+  
+  .sidebar .direction-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    background-color: #1d3557;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .sidebar .direction-btn:hover {
+    background-color: #457b9d;
+  }
+  
+  .main-settings {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .main-settings h1 {
+    margin-bottom: 20px;
+  }
+  
+  .settings-form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  .settings-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .action-buttons button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #apply-btn {
+    background-color: #2a9d8f;
+    color: white;
+  }
+  
+  #apply-btn:hover {
+    background-color: #21867a;
+  }
+  
+  #apply-all-btn {
+    background-color: #e63946;
+    color: white;
+  }
+  
+  #apply-all-btn:hover {
+    background-color: #b53139;
+  }
+  .settings-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .settings-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .settings-form .input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .settings-form input {
+    width: 80px; /* Ukuran input menjadi lebih pendek */
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  
+  .indicator.green {
+    background-color: #2a9d8f;
+  }
+  
+  .indicator.yellow {
+    background-color: #e9c46a;
+  }
+  
+  .indicator.red {
+    background-color: #e63946;
+  }
+  .profile-icon a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+  
+  /* Profile Section */
+  .profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Kurangi tinggi header dan footer */
+    background-color: #cce7f5;
+  }
+  
+  .profile-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 40px;
+    background-color: #eaf7fd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    object-fit: cover;
+  }
+  
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .input-group label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    width: 150px;
+  }
+  
+  .input-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .update-btn {
+    padding: 10px 20px;
+    background-color: #495057;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .update-btn:hover {
+    background-color: #343a40;
+  }
+  
+  /* Icons */
+  .icon-user:before { content: "👤"; }
+  .icon-location:before { content: "📍"; }
+  .icon-email:before { content: "✉️"; }
+  .icon-phone:before { content: "📞"; }
+  
+  .profile-picture img {
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  
